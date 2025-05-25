@@ -9,9 +9,9 @@ function Home() {
       <Header></Header>
       <section>
         <h1><a href="../projects">Latest Projects →</a></h1>
-        <div class="projects">
+        <div className="projects">
           {projects.map((project) => (
-            <ProjectTile key={project.id} project={project} />
+            <ProjectTile key={project.id} project={project} title={`.../${project.type}/${project.title}`}/>
           ))}
         </div>
       </section>

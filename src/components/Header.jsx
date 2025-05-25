@@ -1,14 +1,16 @@
 import React from "react";
+import '../pages/Home.css';
 import logo from "../assets/images/abelist-cropped.png"
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
         <header>
-            <img class="logo" src={logo} alt="" srcset=""></img>
+            <Link to="/"><img className="logo" src={logo} alt="" srcset=""></img></Link>
             <nav>
-                <a href="../projects">Projects</a>
-                <a href="../games">Games</a>
-                <a href="../about">About</a>
+                <Link to="/projects">Projects</Link>
+                <Link to="/games">Games</Link>
+                <Link to="/about">About</Link>
             </nav>
         </header>
     );
