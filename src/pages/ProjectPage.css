@@ -1,0 +1,20 @@
+/* Custom CSS */
+
+* {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.image {
+    border: 2px solid black;
+    margin: 1em;
+    max-width: 500px;
+}
+
+.tech img {
+    max-width: 64px;
+    max-height: 64px;
+}

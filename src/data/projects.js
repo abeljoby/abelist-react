@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: "focus-prep",
+    id: "focusprep",
     type: "projects",
     title: "Focus Prep",
     link: "https://github.com/abeljoby/focus-prep",
@@ -20,7 +20,7 @@ export const projects = [
     `,
   },
   {
-    id: "dle",
+    id: "memory",
     type: "games",
     title: "Memory Game",
     link: "https://github.com/abeljoby/top-2-react-project",
