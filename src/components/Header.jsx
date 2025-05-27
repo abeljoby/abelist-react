@@ -1,16 +1,16 @@
-import React from "react";
 import '../pages/Home.css';
 import logo from "../assets/images/abelist-cropped.png"
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
         <header>
-            <Link to="/"><img className="logo" src={logo} alt="" srcset=""></img></Link>
+            <Link to="/"><img className="logo" src={logo} alt="" /></Link>
             <nav>
-                <Link to="/projects">Projects</Link>
-                <Link to="/games">Games</Link>
-                <Link to="/about">About</Link>
+                <NavLink to="/projects" className={({ isActive }) => isActive ? "active" : undefined}>Projects</NavLink>
+                <NavLink to="/games" className={({ isActive }) => isActive ? "active" : undefined}>Games</NavLink>
+                <NavLink to="/about" className={({ isActive }) => isActive ? "active" : undefined}>About</NavLink>
             </nav>
         </header>
     );
